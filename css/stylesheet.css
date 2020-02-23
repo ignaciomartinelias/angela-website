@@ -1,0 +1,200 @@
+/* TAGS */
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: 'AkzidenzGrotesk', sans-serif !important;
+	font-weight: normal;
+    font-size: 11px !important;	
+	
+}
+header {
+	margin-bottom: 70px;
+	font-size: 16px;
+}
+
+figure {
+	margin: 20px !important;
+	
+}
+
+figcaption {
+	margin: 1em 0;
+	text-align: center;
+}
+
+
+
+
+/* LINKS */
+a {
+	
+	transition: color 0.25 linear;
+}
+
+a:link { 
+	color: #8C9AA8 !important;
+	text-decoration: none !important;
+
+}
+
+a:visited { 
+	color: #8C9AA8 !important;
+}
+
+a:hover { 
+	font-weight: normal;
+	color: #F8E0E0 !important;
+	background-color: #ffffff !important;
+	text-decoration: none !important;
+}
+
+a:active { 
+	color: #8C9AA8 !important;
+}
+
+/* CLASSES */
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header .item {
+    width: fit-content;
+    font-family: AkzidenzGrotesk;
+    font-size: 24px;
+    color: black !important;
+    font-weight: 300;
+    margin: 0;
+}
+
+.header .item:nth-child(2) {
+    margin-right: 20px;
+}
+
+.row {
+    height: 100%;
+}
+
+.row div div {
+    position: relative;
+}
+
+.img-responsive {
+    transition: 1.5s;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.img-responsive.highlight-image {
+    transition: 1.5s;
+    opacity: 1;
+}
+
+.mainCanvas
+{
+    border: 1px solid #000;
+    position: relative;
+}
+
+.img1
+{
+   
+    width: 200px;
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: 40px;
+    left:2px;
+}
+
+.img2
+{
+    
+    width: 240px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+    left: 12px;
+}
+
+.img3
+{
+    
+    width: 220px;
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: -40px;
+    left: 400px;
+}
+
+
+#object{
+
+	visibility: hidden;
+}
+
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header .item {
+        width: 100%;
+    }
+
+	.col {
+		float: none;
+		width: 100%;
+	}
+
+	#lotte-thumb, #shapes-thumb {
+		margin: 0;
+		float: none;
+	}
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('AkzidenzGrotesk-Bold.eot');
+    src: url('AkzidenzGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGrotesk-Bold.woff2') format('woff2'),
+        url('AkzidenzGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('AkzidenzGrotesk-Light.eot');
+    src: url('AkzidenzGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGrotesk-Light.woff2') format('woff2'),
+        url('AkzidenzGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('AkzidenzGrotesk-Roman.eot');
+    src: url('AkzidenzGrotesk-Roman.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGrotesk-Roman.woff2') format('woff2'),
+        url('AkzidenzGrotesk-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
