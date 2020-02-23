@@ -63,6 +63,7 @@ a:active {
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
+    z-index: 10;
 }
 
 .header .item {
